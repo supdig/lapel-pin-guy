@@ -2,6 +2,8 @@ const menu=document.querySelector('.menu-toggle'),nav=document.querySelector('#n
 const menuIcon=menu.querySelector('span');
 if(menuIcon)menuIcon.setAttribute('aria-hidden','true');
 function setMenuOpen(open){
+ if(open)document.documentElement.style.setProperty('--mobile-header-height',menu.closest('header').getBoundingClientRect().height+'px');
+ document.body.classList.toggle('mobile-menu-open',open&&window.matchMedia('(max-width:760px)').matches);
  menu.setAttribute('aria-expanded',String(open));
  menu.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
  nav.classList.toggle('open',open);

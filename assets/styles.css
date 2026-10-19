@@ -52,3 +52,13 @@ main>.hero{background:#fff}main>.hero+section{background:var(--surface-warm)}mai
 
 /* Solid green sections share the primary button brand colour. */
 main>.uses,main>.cta{background:var(--accent);color:#fff}.uses p,.uses .eyebrow,.cta p,.cta .eyebrow{color:#fff}.uses .use-icon{color:#fff}.uses .use-grid article{border-color:rgba(255,255,255,.3)}
+/* Full-screen mobile navigation beneath the visible header. */
+@media(max-width:760px){
+ header{position:sticky;top:0;z-index:100;background:#fff}header:has(#navigation.open){padding-bottom:16px}
+ header #navigation,header #navigation.open{position:fixed;inset:var(--mobile-header-height,78px) 0 0;display:flex;flex:none;width:100%;max-width:100%;height:calc(100dvh - var(--mobile-header-height,78px));max-height:none;margin:0;padding:14px 26px 28px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;background:#faf9f6;z-index:99;transform:translateY(-8px);transition:opacity .2s ease,transform .2s ease,visibility 0s linear .2s}
+ header #navigation.open{visibility:visible;opacity:1;transform:translateY(0);transition:opacity .2s ease,transform .2s ease,visibility 0s}
+ header #navigation>a:not(.button){font-size:18px;padding:18px 0;min-height:61px}
+ header #navigation>.button{justify-content:center;font-size:17px;min-height:52px;margin-top:24px}
+ body.mobile-menu-open{overflow:hidden}
+}
+@media(max-width:760px) and (prefers-reduced-motion:reduce){header #navigation,header #navigation.open{transition:none;transform:none}}
