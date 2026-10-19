@@ -62,3 +62,6 @@ main>.uses,main>.cta{background:var(--accent);color:#fff}.uses p,.uses .eyebrow,
  body.mobile-menu-open{overflow:hidden}
 }
 @media(max-width:760px) and (prefers-reduced-motion:reduce){header #navigation,header #navigation.open{transition:none;transform:none}}
+
+/* Edge-to-edge backgrounds for the comparison and uses sections. */
+main>.soft:has(.table-wrap){background:var(--surface-grey)!important;box-shadow:0 0 0 100vmax var(--surface-grey);clip-path:inset(0 -100vmax)}main>.uses{box-shadow:0 0 0 100vmax var(--accent);clip-path:inset(0 -100vmax)}
