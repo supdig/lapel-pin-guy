@@ -25,7 +25,7 @@ body,header,footer,.uses,.card,.page-intro{background:#fff}.soft{background:#f5f
 .order-intro{border-bottom:0;padding-bottom:12px}.order-intro p{margin-bottom:0}.order-process{padding-top:12px}.order-process .steps{margin-top:12px}@media(max-width:760px){.order-intro{padding-bottom:10px}.order-process{padding-top:10px}.order-process .steps{margin-top:10px}}
 .hero-copy .micro{font-size:14px;line-height:1.6;margin-top:23px;color:#615f56}@media(max-width:760px){.hero-copy .micro{font-size:14px;max-width:36ch}.hero h1{margin-top:0}}
 /* Responsive presentation: shared rhythm, warm neutrals and forest green. */
-:root{--surface-warm:#faf9f6;--surface-beige:#f2efe8;--surface-grey:#f4f5f3;--forest:#123e32}
+:root{--surface-warm:#faf9f6;--surface-beige:#f2efe8;--surface-grey:#f4f5f3;--forest:var(--accent)}
 header{gap:20px}.menu-toggle{color:var(--ink)}main>section{background:#fff}main>section:nth-of-type(3n+2):not(.page-intro):not(.cta){background:var(--surface-warm)}main>section:nth-of-type(3n):not(.page-intro):not(.cta){background:var(--surface-grey)}main>.soft{background:var(--surface-beige)}main>.cta{background:var(--forest);border-top:0;color:#fff}.cta p{color:#e4ede8}.cta .eyebrow{color:#c4d7cc}.cta .button.light{background:#fff;color:#123e32}
 main>.hero{background:#fff}main>.hero+section{background:var(--surface-warm)}main>.uses{background:var(--forest);color:#fff}.uses p{color:#e1ebe5}.uses .eyebrow{color:#c4d7cc}.uses .use-icon{color:#b9d6c8}.uses .use-grid article{border-color:#46685a}main>.about-focus{background:var(--surface-beige);border:0}.card{background:#fff}.product-detail{border-bottom:0}.page-intro{border-color:#e5e3dd}.order-intro{border-bottom:0}.reading p{max-width:72ch}.hero-copy .lead{max-width:49ch}.hero-copy .micro{max-width:52ch}.product-detail .lead{max-width:48ch}.gallery-grid{background:#fff!important}.section-head p{line-height:1.65}.button{line-height:1.3}.hero .actions .button{gap:12px}.hero .actions .button span{font-size:16px}.hero-image img{object-fit:contain}.table-wrap{max-width:100%}
 @media(max-width:1100px) and (min-width:761px){header{gap:14px}nav{gap:12px;font-size:11px}.brand b,.brand b .brand-dot{font-size:22px}.button.small{padding:12px;font-size:11px}}
@@ -49,3 +49,6 @@ main>.hero{background:#fff}main>.hero+section{background:var(--surface-warm)}mai
  .menu-toggle[aria-expanded=true] span{font-size:23px;font-weight:400;line-height:14px}
 }
 @media(max-width:760px) and (prefers-reduced-motion:reduce){header #navigation,header #navigation.open{transition:none}}
+
+/* Solid green sections share the primary button brand colour. */
+main>.uses,main>.cta{background:var(--accent);color:#fff}.uses p,.uses .eyebrow,.cta p,.cta .eyebrow{color:#fff}.uses .use-icon{color:#fff}.uses .use-grid article{border-color:rgba(255,255,255,.3)}
