@@ -19,6 +19,32 @@ main>.cta>.button{max-width:100%;white-space:normal}
   main>.cta{padding-left:6%;padding-right:6%}
 }
 </style>
+
+<style>
+/* Give the main ordering steps a stronger visual hierarchy. */
+main>.order-process{padding-top:36px;padding-bottom:72px}
+.order-process .steps{gap:clamp(24px,3vw,56px);margin-top:0}
+.order-process .steps article{min-width:0}
+.order-process .step-num{
+  display:flex;align-items:center;justify-content:center;
+  width:76px;height:76px;padding:0;margin:0 0 28px;
+  border:0;border-radius:50%;background:var(--accent);color:#fff;
+  font-size:30px;font-weight:500;line-height:1;
+}
+.order-process .steps h3{font-size:clamp(25px,2.1vw,34px);line-height:1.18;margin-bottom:18px}
+.order-process .steps p{font-size:18px;line-height:1.65;max-width:36ch}
+.order-process>.fine{font-size:13px;margin-top:34px}
+@media(max-width:1100px){
+  .order-process .steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+}
+@media(max-width:760px){
+  main>.order-process{padding-top:24px;padding-bottom:48px}
+  .order-process .steps{grid-template-columns:1fr;gap:32px}
+  .order-process .step-num{width:64px;height:64px;font-size:26px;margin-bottom:20px}
+  .order-process .steps h3{font-size:27px;margin-bottom:12px}
+  .order-process .steps p{font-size:17px;max-width:46ch;margin-bottom:0}
+}
+</style>
 </head>
 <body><a class="skip" href="#main">Skip to content</a>
 <header><a class="brand" href="/" aria-label="The Lapel Pin Guy home"><b>The Lapel Pin Guy<span class="brand-dot" aria-hidden="true">.</span></b><small>CUSTOM LAPEL PINS</small></a><button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu <span>☰</span></button>
