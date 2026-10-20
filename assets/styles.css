@@ -1,3 +1,10 @@
+/* CSS GUIDE: Sections follow the visual website where possible.
+   Later override sections intentionally remain in their original order.
+   CSS cascade matters: edit the later matching rule if an earlier change has no effect. */
+
+/* ============================================================
+   01  GLOBAL VARIABLES & BASE TYPOGRAPHY
+   ============================================================ */
 :root{
   --bg:#f6f4ee;
   --ink:#252823;
@@ -60,6 +67,10 @@ p{
   color:var(--muted);
   margin-bottom:18px
 }
+
+/* ============================================================
+   02  HEADER, BRAND & NAVIGATION
+   ============================================================ */
 header{
   max-width:1536px;
   margin:auto;
@@ -101,6 +112,10 @@ nav a[aria-current=page]{
   text-decoration:underline;
   text-underline-offset:6px
 }
+
+/* ============================================================
+   03  SHARED BUTTONS & LAYOUT
+   ============================================================ */
 .button{
   display:inline-flex;
   align-items:center;
@@ -137,6 +152,10 @@ main{
 section{
   padding:85px 5%
 }
+
+/* ============================================================
+   04  HOMEPAGE HERO
+   ============================================================ */
 .eyebrow{
   text-transform:uppercase;
   font-size:11px;
@@ -201,6 +220,10 @@ figcaption,.fine{
   margin-top:12px;
   line-height:1.5
 }
+
+/* ============================================================
+   05  INTRO STRIP & SECTION HEADINGS
+   ============================================================ */
 .intro-strip{
   margin:0 5%;
   border-top:1px solid var(--line);
@@ -234,6 +257,10 @@ figcaption,.fine{
   font-size:14px;
   margin-bottom:0
 }
+
+/* ============================================================
+   06  PIN STYLE CARDS
+   ============================================================ */
 .cards{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -282,6 +309,10 @@ figcaption,.fine{
 .type-art small{
   font-size:10px
 }
+
+/* ============================================================
+   07  COMPARISON TABLE
+   ============================================================ */
 .soft{
   background:#eceee5
 }
@@ -316,6 +347,10 @@ tbody th{
 td{
   color:var(--muted)
 }
+
+/* ============================================================
+   08  USES & APPLICATIONS
+   ============================================================ */
 .use-grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -333,6 +368,10 @@ td{
 .use-grid p{
   font-size:14px
 }
+
+/* ============================================================
+   09  HOW IT WORKS
+   ============================================================ */
 .steps{
   display:grid;
   grid-template-columns:repeat(4,1fr);
@@ -354,6 +393,10 @@ td{
 .steps p{
   font-size:14px
 }
+
+/* ============================================================
+   10  IMAGE / TEXT SPLIT & FAQ
+   ============================================================ */
 .split{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -400,6 +443,10 @@ details p{
   max-width:800px;
   margin:14px 0 0
 }
+
+/* ============================================================
+   11  CALL TO ACTION
+   ============================================================ */
 .cta{
   margin:0 5% 70px;
   padding:55px;
@@ -424,6 +471,10 @@ details p{
   color:var(--ink);
   flex-shrink:0
 }
+
+/* ============================================================
+   12  FOOTER
+   ============================================================ */
 footer{
   padding:45px 5% 25px;
   border-top:1px solid var(--line);
@@ -454,6 +505,10 @@ footer{
   font-size:10px;
   color:var(--muted)
 }
+
+/* ============================================================
+   13  INNER PAGES: INTRO, PRODUCTS & GALLERY
+   ============================================================ */
 .page-intro{
   padding-bottom:55px;
   border-bottom:1px solid var(--line);
@@ -510,6 +565,10 @@ footer{
   display:block;
   margin-top:5px
 }
+
+/* ============================================================
+   14  INNER PAGES: CONTENT & QUOTE FORM
+   ============================================================ */
 .checklist{
   padding-left:20px;
   color:var(--muted)
@@ -584,6 +643,10 @@ aside a{
   font-size:14px;
   margin-top:18px
 }
+
+/* ============================================================
+   15  ACCESSIBILITY
+   ============================================================ */
 .skip{
   position:fixed;
   top:-100px;
@@ -595,6 +658,10 @@ aside a{
 .skip:focus{
   top:10px
 }
+
+/* ============================================================
+   16  INITIAL RESPONSIVE RULES
+   ============================================================ */
 @media(min-width:1450px){
   .hero-image img{
     height:590px
@@ -886,6 +953,10 @@ aside a{
 .uses .use-grid{
   margin-top:34px
 }
+
+/* ============================================================
+   17  DESIGN OVERRIDES: CORPORATE PALETTE
+   ============================================================ */
 /* Corporate palette and refined wordmark */
 :root{
   --bg:#fff;
@@ -1006,6 +1077,10 @@ h1,h2{
     font-size:34px
   }
 }
+
+/* ============================================================
+   18  DESIGN OVERRIDES: PAGE BACKGROUNDS
+   ============================================================ */
 /* NIX: white page and section backgrounds */
 body,header,footer,.soft,.uses,.card,.page-intro{
   background:#fff
@@ -1048,6 +1123,10 @@ body,header,footer,.soft,.uses,.card,.page-intro{
     font-size:21px
   }
 }
+
+/* ============================================================
+   19  DESIGN OVERRIDES: COLOUR PALETTE
+   ============================================================ */
 /* Reference palette: sky, teal, slate and indigo */
 :root{
   --bg:#fff;
@@ -1125,6 +1204,10 @@ input:focus,textarea:focus,select:focus{
 .hero .eyebrow{
   color:#42528b
 }
+
+/* ============================================================
+   20  DESIGN OVERRIDES: WARM NEUTRALS & GREEN
+   ============================================================ */
 /* Warm neutral and forest-green palette */
 :root{
   --bg:#fff;
@@ -1332,6 +1415,10 @@ th,td{
     margin-top:0
   }
 }
+
+/* ============================================================
+   21  FINAL RESPONSIVE PRESENTATION OVERRIDES
+   ============================================================ */
 /* Responsive presentation: shared rhythm, warm neutrals and forest green. */
 :root{
   --surface-warm:#faf9f6;
@@ -1864,6 +1951,10 @@ main>.about-focus{
     grid-template-columns:1fr 1fr
   }
 }
+
+/* ============================================================
+   22  MOBILE NAVIGATION REFINEMENTS
+   ============================================================ */
 /* Mobile navigation only: edge-to-edge panel in document flow. */
 @media(max-width:760px){
   header{
@@ -1944,6 +2035,10 @@ main>.about-focus{
     transition:none
   }
 }
+
+/* ============================================================
+   23  GREEN BACKGROUND SECTIONS
+   ============================================================ */
 /* Solid green sections share the primary button brand colour. */
 main>.uses,main>.cta{
   background:var(--accent);
@@ -1958,6 +2053,10 @@ main>.uses,main>.cta{
 .uses .use-grid article{
   border-color:rgba(255,255,255,.3)
 }
+
+/* ============================================================
+   24  FULL-SCREEN MOBILE MENU
+   ============================================================ */
 /* Full-screen mobile navigation beneath the visible header. */
 @media(max-width:760px){
   header{
@@ -2015,6 +2114,10 @@ main>.uses,main>.cta{
     transform:none
   }
 }
+
+/* ============================================================
+   25  FULL-WIDTH COMPARISON & USES BACKGROUNDS
+   ============================================================ */
 /* Edge-to-edge backgrounds for the comparison and uses sections. */
 main>.soft:has(.table-wrap){
   background:var(--surface-grey)!important;
@@ -2025,6 +2128,10 @@ main>.uses{
   box-shadow:0 0 0 100vmax var(--accent);
   clip-path:inset(0 -100vmax)
 }
+
+/* ============================================================
+   26  HOMEPAGE SECTION BACKGROUNDS
+   ============================================================ */
 /* Continue full-width backgrounds through the pin styles, process and gallery preview. */
 main>.hero+section,main:has(>.hero)>section:has(>.steps){
   box-shadow:0 0 0 100vmax var(--surface-warm);
@@ -2034,6 +2141,10 @@ main:has(>.hero)>.split{
   box-shadow:0 0 0 100vmax var(--surface-grey);
   clip-path:inset(0 -100vmax)
 }
+
+/* ============================================================
+   27  CUSTOMER REVIEWS
+   ============================================================ */
 /* Customer reviews, with original Google business attribution. */
 main>.reviews-section{
   background:var(--surface-beige)!important;
