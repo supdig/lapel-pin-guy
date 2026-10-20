@@ -2255,3 +2255,32 @@ main>.cta,main>.about-focus{
     padding-right:6%;
   }
 }
+
+/* ============================================================
+   29  HEADER & FOOTER MENU READABILITY
+   ============================================================ */
+header nav,header nav .button.small,.footer-top>div{
+  font-size:16px;
+  line-height:1.5;
+}
+header nav{
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+header>.brand{
+  flex-shrink:0;
+}
+.footer-top>div a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+}
+@media(max-width:760px){
+  header #navigation>a:not(.button),header #navigation>.button{
+    font-size:18px;
+  }
+  header #navigation{
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+  }
+}
