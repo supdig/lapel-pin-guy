@@ -2355,3 +2355,30 @@ main>section.cta>.button{
   .table-wrap tbody td:nth-child(2)::before{content:"Surface"}
   .table-wrap tbody td:nth-child(3)::before{content:"Consider it for"}
 }
+
+/* ============================================================
+   32  BODY COPY: 18PX ON DESKTOP & MOBILE
+   ============================================================ */
+body{font-size:18px}
+main p,
+main .lead,
+main .section-head p,
+main .steps p,
+main .use-grid p,
+main .split p,
+main .about-focus p,
+main .hero-copy .lead,
+main .hero-copy .micro,
+main .product-detail .lead,
+main .faq p,
+main details p,
+main aside p,
+main .cta p,
+main .review-card blockquote p,
+main .checklist,
+main table,
+main .table-wrap tbody td,
+footer .footer-top p{
+  font-size:18px;
+  line-height:1.6;
+}
