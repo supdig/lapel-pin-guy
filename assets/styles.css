@@ -2228,3 +2228,30 @@ main>.reviews-section+section{
     margin-bottom:22px
   }
 }
+
+/* ============================================================
+   28  FULL-WIDTH PAGE SECTIONS
+   ============================================================ */
+header,main,footer{
+  width:100%;
+  max-width:none;
+}
+main>section{
+  width:100%;
+  max-width:none;
+  margin-left:0;
+  margin-right:0;
+  padding-left:5%;
+  padding-right:5%;
+  box-shadow:none!important;
+  clip-path:none!important;
+}
+main>.cta,main>.about-focus{
+  border-radius:0;
+}
+@media(max-width:760px){
+  main>section{
+    padding-left:6%;
+    padding-right:6%;
+  }
+}
